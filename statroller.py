@@ -6,7 +6,7 @@ import diceroller
 def roll_standard():
     # returns a list of integers
     stats = []
-    for i in range(5):
+    for i in range(6):
         stats.append(roll_stat_standard())
     return stats
 
