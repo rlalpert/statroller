@@ -5,16 +5,12 @@ import diceroller
 
 def roll_standard():
     # returns a list of integers
-    stats = []
-    for i in range(6):
-        stats.append(roll_stat_standard())
+    stats = [roll_stat_standard() for i in range(6)]
     return stats
 
 def roll_hardcore():
     # returns a list of integers
-    stats = []
-    for i in range(6):
-        stats.append(roll_stat_hardcore())
+    stats = [roll_stat_hardcore() for i in range(6)]
     return stats
 
 def roll_stat_standard():
