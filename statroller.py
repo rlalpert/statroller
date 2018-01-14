@@ -19,8 +19,7 @@ def roll_stat_standard():
     roll = diceroller.roll_detailed("4d6")
     roll_list = roll[1][0]["all_rolls"]
     roll_list.sort()
-    accepted_rolls = roll_list[1:4]
-    stat = sum(accepted_rolls)
+    stat = sum(roll_list[1:4])
     return stat
 
 def roll_stat_hardcore():
